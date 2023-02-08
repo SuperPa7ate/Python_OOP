@@ -5,15 +5,25 @@ Vous trouverez ci-joint les dossiers/fichiers concernant la classe texte. C'est 
 # Arborescence des fichiers
 
 📦OOP
+
 ┣ 📂input_files
+
 ┃ ┣ 📜a.txt
+
 ┃ ┗ 📜text.txt
+
 ┣ 📂output_files
+
 ┃ ┗ 📜results.xlsx
+
 ┣ 📜.env
+
 ┣ 📜class_text.py
+
 ┣ 📜Pipfile
+
 ┣ 📜Pipfile.lock
+
 ┗ 📜readme.md
 
 ## 📦OOP
