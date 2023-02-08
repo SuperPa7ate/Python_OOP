@@ -7,7 +7,6 @@ Vous trouverez ci-joint les dossiers/fichiers concernant la classe texte. C'est 
 📦OOP
 
 ┣ 📂input_files
-
 ┃ ┣ 📜a.txt
 
 ┃ ┗ 📜text.txt
