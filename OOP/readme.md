@@ -1,6 +1,6 @@
 # Classe Texte
 
-Vous trouverez ci-joint les dossiers/fichiers concernant la classe texte. C'est une classe python qui utilise Spacy et pandas pour faire divers traitement sur un texte. Le tout peut ensuite être exporté au format excel (".xlsx").
+Vous trouverez ci-joint les dossiers/fichiers concernant la classe texte. C'est une classe python qui utilise *Spacy* et *pandas* pour faire divers traitement sur un texte. Le tout peut ensuite être exporté au format excel (".xlsx").
 
 # Arborescence des fichiers
 
