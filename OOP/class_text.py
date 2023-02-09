@@ -32,6 +32,9 @@ class Text :
             self.nlp=spacy.load('fr_core_news_md')
         elif self.language=="eng":
             self.nlp=spacy.load("en_core_web_sm")
+            
+        #crée une variable self.name pour avoir le nom du fichier sans l'extension
+        self.name=self.fileName[0:-4]
 
     def read(self, directory=os.path.join(BASE_DIR,"input_files"), encoding="UTF-8"):
         """Ouvre un fichier texte au format .txt et en stocke le contenu."""
@@ -224,11 +227,11 @@ class Text :
 
         return similariteSemantique
 
-    def export_excel(self, fileName="results.xlsx", directory=os.path.join(BASE_DIR,"output_files")):
+    def export_excel(self, fileName="results", directory=os.path.join(BASE_DIR,"output_files")):
         """Exporte tous les dictionnaires, listes et strings concernant le texte stockés en variables d'objet dans un fichier excel."""
 
         #ouverture du writer pandas pour écrire un fichier excel (pour avoir plusieurs pages)
-        with pd.ExcelWriter(directory+'\\'+fileName, mode="w") as writer:
+        with pd.ExcelWriter(directory+'\\'+fileName+"_"+self.name+".xlsx", mode="w") as writer:
 
             #dictionnaire qui sert à stocker les informations str et path
             misc_dict={}
